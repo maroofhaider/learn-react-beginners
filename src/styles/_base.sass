@@ -1,0 +1,42 @@
+@use "globals" as *
+
+*, *:before, *:after
+  box-sizing: inherit
+*
+  outline: none
+a
+  color: currentColor
+  text-decoration: none 
+  color: #333
+  height: 10px
+
+body, html
+  font-size: 62.5%
+  height: 100%
+
+body
+  font-size: $font-size
+  font-family: $font-base
+  margin: 0
+
+.wrapper
+  position: relative
+  padding: $gutter
+
+/* For main media query container set width */
+.mq-container
+  clear: fix
+  margin: 0 auto
+  position: relative
+  width: $wrapperWidth
+
+  @include MQ(sm)
+    width: 94%
+  @include MQ(md)
+    width: $wrapperWidth - 690px
+  @include MQ(lg)
+    width: $wrapperWidth - 460px
+  @include MQ(xl)
+    width: $wrapperWidth - 230px
+  @include MQ(xxl)
+    width: $wrapperWidth

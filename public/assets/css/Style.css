@@ -1,0 +1,99 @@
+/*default form variables*/
+/*theme base variables*/
+/*default colors*/
+/*theme base colors*/
+/* media query mixins */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+  outline: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+  color: #333;
+  height: 10px;
+}
+
+body, html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  font-size: 1.3rem;
+  font-family: "Open Sans", sans-serif, system-ui;
+  margin: 0;
+}
+
+.wrapper {
+  position: relative;
+  padding: 20px;
+}
+
+/* For main media query container set width */
+.mq-container {
+  clear: fix;
+  margin: 0 auto;
+  position: relative;
+  width: 1400px;
+}
+@media (max-width: 767px) {
+  .mq-container {
+    width: 94%;
+  }
+}
+@media (min-width: 768px) {
+  .mq-container {
+    width: 710px;
+  }
+}
+@media (min-width: 960px) {
+  .mq-container {
+    width: 940px;
+  }
+}
+@media (min-width: 1280px) {
+  .mq-container {
+    width: 1170px;
+  }
+}
+@media (min-width: 1600px) {
+  .mq-container {
+    width: 1400px;
+  }
+}
+
+[id=root] {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.mh-intro {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.mh-intro img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+.mh-intro small {
+  font-size: 12px;
+  color: #6c6c6c;
+  display: flex;
+  font-style: italic;
+  margin-top: 5px;
+  font-weight: normal;
+}
+.mh-intro small a {
+  margin-left: 6px;
+  color: currentColor;
+}

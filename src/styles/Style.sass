@@ -1,0 +1,33 @@
+@use "globals" as *
+@use "base"
+@use "header"
+@use "footer"
+@use "main"
+
+[id="root"]
+    margin: 0
+    padding: 0
+    height: 100%      
+//---------------------------------
+// for framework intro skin
+//---------------------------------
+.mh-intro
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center 
+    flex-direction: column
+    img
+        width: 200px
+        height: 200px
+        margin-bottom: 20px
+    small
+        font-size: 12px
+        color: $gray
+        display: flex
+        font-style: italic
+        margin-top: 5px
+        font-weight: normal
+        a
+            margin-left: 6px
+            color: currentColor

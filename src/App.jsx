@@ -1,9 +1,10 @@
-import MhIntro from './components/MhIntro.jsx'
+import React from 'react'
+import CardLayoutStyle1 from './components/props/CardLayoutStyle1'
 import '/public/assets/css/Style.css'
 
 function App() {
   return (
-    <MhIntro />
+    <CardLayoutStyle1 />
   )
 }
 

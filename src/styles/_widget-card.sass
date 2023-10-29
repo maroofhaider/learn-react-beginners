@@ -1,0 +1,26 @@
+@use "globals" as *
+
+.card-layout-style1
+	max-width: 400px
+	
+	&:not(:last-child)
+		margin-right: 40px
+	img
+		width: 100% 
+		margin-bottom: 20px
+		transition: .2s ease-in
+	h3
+		font-size: 20px   
+		margin: 0 0 10px
+	p
+		margin: 0  
+	
+	&:hover
+		img
+			box-shadow: 0 1px 15px rgba(0, 0, 0, .3)
+
+
+.cardPreview
+	.mq-container
+		display: flex 
+		justify-content: space-between

@@ -25,7 +25,7 @@ body, html {
 
 body {
   font-size: 1.3rem;
-  font-family: "Open Sans", sans-serif, system-ui;
+  font-family: "Roboto", sans-serif, system-ui;
   margin: 0;
 }
 
@@ -75,11 +75,39 @@ body {
 }
 .card-layout-style1 img {
   width: 100%;
+  margin-bottom: 20px;
+  transition: 0.2s ease-in;
+}
+.card-layout-style1 h3 {
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+.card-layout-style1 p {
+  margin: 0;
+}
+.card-layout-style1:hover img {
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3);
 }
 
 .cardPreview .mq-container {
   display: flex;
   justify-content: space-between;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 700;
+  text-align: center;
+  margin: 40px 0 20px;
+}
+h1 + p {
+  text-align: center;
+  font-size: 18px;
+  margin: 0 0 40px;
+  color: #5c5c5c;
+}
+h1 + p strong {
+  color: #5b00e4;
 }
 
 [id=root] {
@@ -102,7 +130,7 @@ body {
 }
 .mh-intro small {
   font-size: 12px;
-  color: #6c6c6c;
+  color: #5c5c5c;
   display: flex;
   font-style: italic;
   margin-top: 5px;

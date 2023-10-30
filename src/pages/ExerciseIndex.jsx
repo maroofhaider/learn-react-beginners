@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom"
 
 function ExerciseIndex() {
   return (
@@ -7,8 +8,8 @@ function ExerciseIndex() {
         <p>Click links to naviate diffrent exersice pages</p>
         <div className="mq-container">
             <ul>
-                <li>Props</li>
-                <li>Ternary Oparators List</li>
+                <li><Link to="/Props"> Props </Link></li>
+                <li><Link to="/TernaryOperators"> Ternary Operators List </Link></li>
             </ul>
         </div>
     </section>

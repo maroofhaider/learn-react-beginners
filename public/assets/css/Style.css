@@ -20,13 +20,13 @@ a {
 
 body, html {
   font-size: 62.5%;
-  height: 100%;
 }
 
 body {
   font-size: 1.3rem;
   font-family: "Roboto", sans-serif, system-ui;
   margin: 0;
+  height: 100%;
 }
 
 .wrapper {

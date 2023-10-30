@@ -1,11 +1,21 @@
 import React from 'react'
-import ExerciseIndex from './components/ExerciseIndex'
 import '/public/assets/css/Style.css'
+import ExerciseIndex from "./pages/ExerciseIndex"
+import Props from "./pages/Props"
+import TernaryOperators from "./pages/TernaryOperators"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+
 
 function App() {
   return (
-    <ExerciseIndex />
-
+    <Router>
+      <ExerciseIndex/>
+      <Routes>
+        <Route path="/Props" element={<Props />} />
+        <Route path="/TernaryOperators" element={<TernaryOperators />} />
+      </Routes>
+    </Router>
+      
   )
 }
 

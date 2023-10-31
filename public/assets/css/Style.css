@@ -14,8 +14,6 @@
 a {
   color: currentColor;
   text-decoration: none;
-  color: #333;
-  height: 10px;
 }
 
 body, html {
@@ -89,13 +87,16 @@ body {
   box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3);
 }
 
+.cardPreview {
+  padding-bottom: 40px;
+}
 .cardPreview .mq-container {
   display: flex;
   justify-content: space-between;
 }
 
 h1 {
-  font-size: 54px;
+  font-size: 48px;
   font-weight: 700;
   text-align: center;
   margin: 40px 0 20px;
@@ -120,7 +121,6 @@ ul {
 }
 ul li {
   font-size: 16px;
-  padding: 10px 15px;
 }
 ul li:not(:last-child) {
   border-bottom: 1px solid #f7f7f7;
@@ -128,6 +128,14 @@ ul li:not(:last-child) {
 ul li:hover {
   color: #5b00e4;
   background-color: #fcfcfc;
+}
+ul li a {
+  display: flex;
+  padding: 10px 15px;
+  color: currentColor;
+}
+ul li a:hover {
+  color: #5b00e4;
 }
 
 [id=root] {

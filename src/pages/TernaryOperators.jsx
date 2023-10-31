@@ -1,9 +1,16 @@
 import React from 'react'
-import TOL from '../components/ternary-operators-lists/TOL'
+import { CardSort } from '../components/ternary-operators-lists/CardSort'
 
 function TernaryOperators() {
   return (
-    <TOL />
+      <ol>
+        
+        {CardSort.map(
+          (CardSort, key) => !CardSort.isWebDesign && <li><h2>{CardSort.name}</h2></li>
+        )}
+      
+      </ol>
+
   )
 }
 

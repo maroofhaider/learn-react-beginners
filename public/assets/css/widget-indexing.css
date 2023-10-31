@@ -1,0 +1,47 @@
+/*default form variables*/
+/*theme base variables*/
+/*default colors*/
+/*theme base colors*/
+/* media query mixins */
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin: 40px 0 20px;
+}
+h1 + p {
+  text-align: center;
+  font-size: 18px;
+  margin: 0 0 40px;
+  color: #5c5c5c;
+}
+h1 + p strong {
+  color: #5b00e4;
+}
+
+ul {
+  width: 500px;
+  margin: 0 auto;
+  padding: 0;
+  border: 1px solid #dedede;
+  border-radius: 6px;
+  overflow: hidden;
+}
+ul li {
+  font-size: 16px;
+}
+ul li:not(:last-child) {
+  border-bottom: 1px solid #f7f7f7;
+}
+ul li:hover {
+  color: #5b00e4;
+  background-color: #fcfcfc;
+}
+ul li a {
+  display: flex;
+  padding: 10px 15px;
+  color: currentColor;
+}
+ul li a:hover {
+  color: #5b00e4;
+}

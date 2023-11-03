@@ -1,0 +1,82 @@
+@use "globals" as *
+@use "sass:color"
+
+h1
+	font-size: 48px
+	text-align: center
+	margin: 40px 0 20px 
+   
+h2
+	font-size: 36px
+	text-align: center
+	margin: 40px 0 20px 
+
+h1, h2
+	& + p
+		text-align: center
+		font-size: 18px
+		margin: 0 0 40px
+		color: $clr-gray
+		strong
+			color: $clr-indigo        
+
+ul
+	width: 500px
+	margin: 0 auto
+	padding: 0
+	border: 1px solid darken($clr-light,10%)
+	border-radius: 6px
+	overflow: hidden
+	li
+		font-size: 16px
+	   
+		&:not(:last-child)
+			border-bottom: 1px solid $clr-light
+		&:hover 
+			color: $clr-indigo
+			background-color: lighten($clr-light, 2%)
+		a
+			display: flex
+			padding: 10px 15px
+			color: currentColor
+			&:hover
+				color: $clr-indigo
+
+.backtoHome
+	position: absolute
+	top: 30px
+	left: 30px
+	display: flex
+	align-items: center
+	flex-direction: column
+	animation: .2s zoomIn
+
+	[data-testid="ArrowCircleLeftIcon"] 
+		font-size: 40px
+		color: $clr-indigo
+		&~span
+			margin-top: 8px
+
+[id="show"]
+	display: block
+[id="hide"]
+	display: none	
+
+.tag-wrap 
+	width: 500px
+	margin: 0 auto
+	border: 1px solid darken($clr-light,10%)
+	border-radius: 6px
+	padding: 10px
+	
+.tag
+	border: none
+	background-color: $clr-gray
+	padding: 10px 15px
+	border-radius: 4px
+	color: #fff
+	margin: 5px
+	&:hover	
+		background-color: adjust-hue($clr-indigo, 57%)
+
+		 

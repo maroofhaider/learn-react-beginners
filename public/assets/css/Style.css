@@ -97,17 +97,23 @@ body {
 
 h1 {
   font-size: 48px;
-  font-weight: 700;
   text-align: center;
   margin: 40px 0 20px;
 }
-h1 + p {
+
+h2 {
+  font-size: 36px;
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+h1 + p, h2 + p {
   text-align: center;
   font-size: 18px;
   margin: 0 0 40px;
   color: #5c5c5c;
 }
-h1 + p strong {
+h1 + p strong, h2 + p strong {
   color: #5b00e4;
 }
 
@@ -136,6 +142,51 @@ ul li a {
 }
 ul li a:hover {
   color: #5b00e4;
+}
+
+.backtoHome {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  animation: 0.2s zoomIn;
+}
+.backtoHome [data-testid=ArrowCircleLeftIcon] {
+  font-size: 40px;
+  color: #5b00e4;
+}
+.backtoHome [data-testid=ArrowCircleLeftIcon] ~ span {
+  margin-top: 8px;
+}
+
+[id=show] {
+  display: block;
+}
+
+[id=hide] {
+  display: none;
+}
+
+.tag-wrap {
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid #dedede;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.tag {
+  border: none;
+  background-color: #5c5c5c;
+  padding: 10px 15px;
+  border-radius: 4px;
+  color: #fff;
+  margin: 5px;
+}
+.tag:hover {
+  background-color: #e40094;
 }
 
 [id=root] {

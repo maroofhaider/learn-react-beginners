@@ -12,9 +12,9 @@ function App() {
     <Router>
       <ExerciseIndex/>
       <Routes>
-        <Route path="/Props" element={<Props />} />
-        <Route path="/TernaryOperators" element={<TernaryOperators />} />
-        <Route path="/SimpleUseState" element={<SimpleUseState />} />
+        <Route exact path="/Props" element={<Props />} />
+        <Route exact path="/TernaryOperators" element={<TernaryOperators />} />
+        <Route exact path="/SimpleUseState" element={<SimpleUseState />} />
       </Routes>
     </Router>
       

@@ -13,7 +13,7 @@ function ExerciseIndex() {
     <section>
       <Link className='backtoHome' onClick={ () => { toogleBackBtn (openBackBtn)}} id={openBackBtn ? "hide" : "show"} to ="/">
         <ArrowCircleLeftIcon />
-        {/* <span>Back to Home</span> */}
+        <span>Back to Home</span>
       </Link>
       <div className="mq-container" id={openBackBtn ? "show" : "hide"}>
         <h1>React Exercise Indexing</h1>
@@ -21,7 +21,7 @@ function ExerciseIndex() {
           <ul onClick={toogleBackBtn}>
               <li><Link to="/Props"> Props </Link></li>
               <li><Link to="/TernaryOperators"> Ternary Operators, List </Link></li>
-              <li><Link to="/UseState"> UseState Hook, States </Link></li>
+              <li><Link to="/SimpleUseState"> UseState Hook, States </Link></li>
           </ul>
       </div>
     </section>

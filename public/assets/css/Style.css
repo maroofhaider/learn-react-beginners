@@ -18,13 +18,14 @@ a {
 
 body, html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 body {
   font-size: 1.3rem;
   font-family: "Roboto", sans-serif, system-ui;
   margin: 0;
-  height: 100%;
+  position: relative;
 }
 
 .wrapper {
@@ -146,23 +147,33 @@ ul li a:hover {
 
 .backtoHome {
   position: absolute;
-  top: 30px;
+  top: 0;
   left: 30px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  animation: 0.2s zoomIn;
 }
 .backtoHome [data-testid=ArrowCircleLeftIcon] {
-  font-size: 40px;
+  font-size: 48px;
   color: #5b00e4;
+  animation: 0.2s zoomIn;
+  transition: 0.2s ease-in;
 }
 .backtoHome [data-testid=ArrowCircleLeftIcon] ~ span {
   margin-top: 8px;
+  opacity: 0;
+}
+.backtoHome:hover [data-testid=ArrowCircleLeftIcon] {
+  font-size: 40px;
+}
+.backtoHome:hover [data-testid=ArrowCircleLeftIcon] ~ span {
+  opacity: 1;
 }
 
 [id=show] {
-  display: block;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 [id=hide] {
@@ -184,9 +195,27 @@ ul li a:hover {
   border-radius: 4px;
   color: #fff;
   margin: 5px;
+  display: flex;
 }
 .tag:hover {
   background-color: #e40094;
+}
+
+.count-widget {
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.count-widget .tag svg {
+  margin-right: 5px;
+}
+.count-widget span {
+  font-weight: bold;
+  padding: 10px;
+  height: 100%;
+  border-radius: 4px;
+  background-color: #d0b1ff;
 }
 
 [id=root] {

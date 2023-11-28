@@ -1,24 +1,21 @@
-import React from 'react'
 import '/public/assets/css/Style.css'
-import ExerciseIndex from "./pages/ExerciseIndex"
-import Props from "./pages/Props"
-import TernaryOperators from "./pages/TernaryOperators"
-import SimpleUseState from "./pages/SimpleUseState"
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home.jsx'
+import Blog from './pages/Blog.jsx'
+import Header from './components/Header.jsx'
 
 function App() {
-  return (
-    <Router>
-      <ExerciseIndex/>
-      <Routes>
-        <Route exact path="/Props" element={<Props />} />
-        <Route exact path="/TernaryOperators" element={<TernaryOperators />} />
-        <Route exact path="/SimpleUseState" element={<SimpleUseState />} />
-      </Routes>
-    </Router>
-      
-  )
+	return (
+		<>
+			<Router>
+				<Header />
+				<Routes>
+					<Route exact path="/Home" element={<Home />} />
+					<Route exact path="/Blog" element={<Blog />} />
+				</Routes>
+			</Router>  
+		</>
+	)
 }
 
 export default App

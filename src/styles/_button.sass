@@ -1,1 +1,22 @@
 @use "globals" as *
+
+.mh--button
+    font-size: 18px
+    color: #fff 
+    background-color: $clr-cta
+    padding: 5px 20px
+    height: 46px
+    font-weight: 500
+    border-radius: 25px
+    gap: 5px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    border: 0
+    transition: .2s ease-in
+    &:hover 
+       background-color: darken($clr-cta, 10%)
+    
+    svg
+        font-size: inherit
+

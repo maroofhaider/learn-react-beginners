@@ -1,12 +1,11 @@
 @use "globals" as *
 
 .mh--button
-    font-size: 18px
+    font-size: 16px
     color: #fff 
     background-color: $clr-cta
     padding: 5px 20px
-    height: 46px
-    font-weight: 500
+    height: 40px
     border-radius: 25px
     gap: 5px
     display: flex
@@ -14,9 +13,14 @@
     justify-content: space-between
     border: 0
     transition: .2s ease-in
+    font-family: $font-base
     &:hover 
        background-color: darken($clr-cta, 10%)
     
     svg
         font-size: inherit
 
+    &.dark-btn
+        background-color: $clr-dark
+        &:hover 
+            background-color: lighten($clr-dark, 20%)

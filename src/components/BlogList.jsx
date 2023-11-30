@@ -1,6 +1,6 @@
 import React from 'react'
 
-function BlogList({blogs}) {
+function BlogList({blogs, handleClick, handleDelPost}) {
   return (
     <div className="blog-main mq-container mh--flex">
         {blogs.map((blog) => (
@@ -10,7 +10,10 @@ function BlogList({blogs}) {
                     <h3 className="blog-title">{blog.title}</h3>						
                     <p>written by <span className="blog-author">{blog.author}</span> | <span className="blog-date">Nov 21, 2023</span></p>
                 </div>
-                <button onClick={() => {toggleClick}} className='mh--button'>Read More</button>
+                <div className="mh--flex">
+                  <button onClick={() => {handleClick(handleClick)}} className='mh--button'>Read More</button>
+                  <button onClick={() => {handleDelPost(blog.id)}} className='mh--button dark-btn'>Delete Post</button>
+                </div>
             </div>
         ))}
     </div>

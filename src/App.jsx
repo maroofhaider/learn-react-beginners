@@ -6,15 +6,13 @@ import Header from './components/Header.jsx'
 
 function App() {
 	return (
-		<>
-			<Router>
-				<Header />
-				<Routes>
-					<Route exact path="/Home" element={<Home />} />
-					<Route exact path="/Blog" element={<Blog />} />
-				</Routes>
-			</Router>  
-		</>
+		<Router>
+			<Header />
+			<Routes>
+				<Route exact path="/Home" element={<Home />} />
+				<Route exact path="/Blog" element={<Blog />} />
+			</Routes>
+		</Router>  
 	)
 }
 

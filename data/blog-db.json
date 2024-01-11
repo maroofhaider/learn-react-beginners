@@ -2,7 +2,7 @@
     "blogs": [
         {
             "imgPath": "./assets/images/blog-img/blog-post-3.avif",
-            "title": "Creating And Maintaining A Voice Of Customer Program", 
+            "title": "Unveiling the Future: Embracing the Latest UI/UX Trends in 2024", 
             "content": "In Part 1 of the series, Temani Afif demonstrated how creating ribbon patterns in CSS has evolved with the availability of new CSS features. In this second installment of this brief two-part series, we look at two additional ribbon variations that introduce techniques for masking a repeated background gradient in CSS.", 
             "author": "Temani Aff", 
             "id": 1 
